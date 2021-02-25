@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>primera</title>
+<!--폴더 안의 링크가 안불러와 질때 ctrl + space-->
+    <link href="images/favicon.png" type="icon" rel="shortcut icon">
+<!--외부 href(css 스타일 속성) type(text/css - 글자 속성) rel(style - 관계)-->
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <!--css jq링크 연결-->
+    <link href="css/jquery.bxslider.css" type="text/css" rel="stylesheet">
+    <!--jq연결-->
+    <script src="js/jquery-3.5.1.js"></script>
+    <!--bxslider .jq연결-->
+    <script src="js/jquery.bxslider.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('.slider').bxSlider({
+          auto:true
+        });
+    });
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+           <div class="header_wrap">
+            <div class="top_area">
+                <p>고객센터 : 080-023-5454</p>
+            </div>
+            <div class="logo">
+               <!--로고 클릭하면 항상 맨 처음 페이지로 이동함-->
+                <a href="index.html"><img src="images/logo.png" alt="로고"></a>
+            </div>
+            <!--내비게이션(주메뉴)-->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">베스트&신제품</a>
+                        <ul class="sub">
+                            <li><a href="#">알파인베리 워터리 크림</a></li>
+                            <li><a href="#">페이셜 마일드 필링</a></li>
+                            <li><a href="#">미라클 씨드 에센스</a></li>
+                            <li><a href="#">그린티바이옴 모이스처라이저</a></li>
+                            <li><a href="#">그린티바이옴 쿨링 샴푸</a></li>
+                            <li><a href="#">알파인베리 워터리 크림</a></li>
+                            <li><a href="#">알파인베리 수딩 젤크림</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">페이셜</a>
+                        <ul class="sub">
+                            <li><a href="#">유형별</a></li>
+                            <li><a href="#">고민별</a>
+                            </li>
+                            <li><a href="#">주요 라인별</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">바디&헤어</a>
+                        <ul class="sub">
+                            <li><a href="#">바디워시</a></li>
+                            <li><a href="#">바디 보습</a></li>
+                            <li><a href="#">시크릿 케어</a></li>
+                            <li><a href="#">핸드 케어</a></li>
+                            <li><a href="#">헤어 케어</a></li>
+                            <li><a href="#">홈 프래그런스</a></li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="#">반려동물</a>
+                        <ul class="sub">
+                            <li><a href="#">워시</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">이벤트</a>
+                        <ul class="sub">
+                            <li><a href="#">진행중 이벤트</a></li>
+                            <li><a href="#">당첨자 발표</a></li>
+                            <li><a href="#">마이 위시 씨드 팟
+                            <p>(나만의 씨앗 찾기)</p></a></li>
+                            <li><a href="#">프리매니아 소개</a></li>
+                            <li><a href="#">활동스케치</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">프리메라 스토리</a>
+                        <ul class="sub">
+                            <li><a href="#">브랜드 스토리</a></li>
+                            <li><a href="#">뉴스레터</a></li>
+                            <li><a href="#">캠페인</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">프리메라 경험하기</a>
+                        <ul class="sub">
+                            <li><a href="#">백화점 컨시어지</a></li>
+                            <li><a href="#">매장찾기</a></li>
+                            <li><a href="#">캠페인</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="right_area">
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">매장찾기</a></li>
+                    <li><a href="#"><img src="images/magnifier.png" alt="돋보기"></a></li>
+                </ul>
+            </div>
+            </div><!--header_wrap 끝 맺음-->
+        </header>
+        <!--class 띄어쓰기 slider하면 추가가 됨.-->
+        <section class="slide slider">
+                <div><a href="#"><img src="images/slide4.png" alt="알파인 베리 워터 크림"></a></div>
+                <div><a href="#"><img src="images/slide3.png" alt="야생콩 안티에이징 라인"></a></div>
+                <div><a href="#"><img src="images/slide2.png" alt="리페어빈 시카 에센스&크림"></a></div>
+                <div><a href="#"><img src="images/slide1.png" alt="마일드 카밍 버블 샴푸 포 캣&독"></a></div>
+        </section>
+        <section class="spacial">
+            <h5>AMOREPACIFIC OF PRIMERA</h5>
+            <p>프리메라만의 특별함을 만나다</p>
+            <ul>
+                <li>
+                   <div class="banner">
+                       <div class="back">
+                           <img src="images/event.banner.png" alt="클렌징 폼 이벤트">
+                       </div>
+                       <div class="front">
+                           <a href="#"><img src="images/banner.1-1.png" alt="이벤트 창"></a>
+                       </div>
+                   </div>
+                   <p>리치한 거품의 클렌징 폼 
+                   <br>무료 샘플 신청하기</p>
+                </li>
+                <li>
+                   <div class="banner">
+                       <div class="back">
+                           <img src="images/best.banner.png" alt="베스트 제품 보러가기">
+                       </div>
+                       <div class="front">
+                           <a href="#"><img src="images/banner.2-2.png" alt="베스트 창"></a>
+                       </div>
+                   </div>
+                   <p>베스트 제품 
+                   <br>보러가기</p>
+                </li>
+                <li>
+                   <div class="banner">
+                       <div class="back">
+                           <img src="images/banner.3.png" alt="프리메라에 활용된 주요 씨앗들">
+                       </div>
+                       <div class="front">
+                           <a href="#"><img src="images/banner.3-3.png" alt="씨앗들 창"></a>
+                       </div>
+                   </div>
+                   <p>프리메라에 활용된 
+                   <br>주요 씨앗들</p>
+                </li>             
+            </ul>            
+        </section>
+        <section class="product">
+            <h5>NEW PRODUCT</h5>
+            <hr>
+            <p>새로나온 제품들을 프리메라에서 한번에 만나보세요.</p>
+            <ul>
+                <li>
+                    <div class="new1">
+                       <div class="back">
+                           <img src="images/newproduct1.png" alt="모이스처라이저">
+                       </div>
+                       <div class="front">
+                           <a href="#"><img src="images/new1.png" alt="모이스처라이저 제형"></a>
+                       </div>
+                    </div>
+                    <h4>그린티 바이옴 스칼프 
+                    <br>헤어 모이스처라이저 150ml</h4>
+                    <p>두피와 모발에 깊은 보습과 매끄러운 윤기를 주는
+                    <br>실리콘 오일 프리 두피모발 전용 수분 로션</p>
+                    <h6>32,000원</h6>
+                </li>
+                <li>
+                    <div class="new1">
+                       <div class="back">
+                           <img src="images/newproduct2.png" alt="샴푸">
+                       </div>
+                       <div class="front">
+                           <a href="#"><img src="images/new2.png" alt="샴푸 제형"></a>
+                       </div>
+                    </div>
+                    <h4>그린티 바이옴 스칼프 
+                    <br>쿨링 샴푸 380ml</h4>
+                    <p>두피부터 모발까지 산뜻한 청량감과
+                    <br>깊은 영양 공급으로 탈모 증상 케어 샴푸</p>
+                    <h6>42,000원</h6>
+                </li>
+                <li>
+                    <div class="new1">
+                       <div class="back">
+                           <img src="images/newproduct3.png" alt="워터리 크림">
+                       </div>
+                       <div class="front">
+                           <a href="#"><img src="images/new3.png" alt="크림 제형"></a>
+                       </div>
+                    </div>
+                    <h4>알파인 베리 워터리 
+                    <br>크림 50ml</h4>
+                    <p>건강한 생기를 부여하는
+                    <br>진정-회복 크림</p>
+                    <h6>39,000원</h6>
+                </li>
+                <li>
+                    <div class="new1">
+                       <div class="back">
+                           <img src="images/newproduct4.png" alt="워터리 수딩 젤 크림">
+                       </div>
+                       <div class="front">
+                           <a href="#"><img src="images/new4.png" alt="수딩 젤 크림 제형"></a>
+                       </div>
+                    </div>
+                    <h4>알파인 베리 워터리 
+                    <br>수딩 젤 크림 50ml</h4>
+                    <p>산뜻한 쿨링 효과를 선사하는
+                    <br>진정-회복 젤크림</p>
+                    <h6>39,000원</h6>
+                </li>
+            </ul>
+        </section>
+        <section class="movie">
+            <h5>PRIMERA VIDEO</h5>
+            <hr>
+            <p>프리메라만의 무드를 영상으로 느껴보세요.</p>
+            <div class="movie_in"><iframe width="1280" height="720" src="https://www.youtube.com/embed/JEvAZfXJXKA?autoplay=1&amp;mute=1&amp;loop=1&amp;start=1&amp;playlist=JEvAZfXJXKA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </section>
+        <section class="story">
+           <!--배경 이미지 고정-->
+           <div class="fixed_bg"></div>
+            <h5>STORY</h5>
+            <hr>
+            <div class="story_in">
+                <div class="left_s">
+                    <img src="images/left_s.png" alt="포장지">
+                </div>
+                <div class="right_s">
+                    <h4>사회적 이슈에
+                <br>귀 기울이는 디자인</h4>
+                <p>환경과 지구 보호를 위한 지속 가능한 용기를 디자인합니다.
+                <br>내용물에 집중하고 불필요한 용기 개발 비용을
+                <br>최소화한 프리몰드를 사용합니다.
+                <br>단상자 배면에 제품 설명을 넣어 내지 설명서를 없앴습니다.
+                <br>인쇄 시 친환경적 콩기름을 활용합니다.</p>
+                <a href="#">Primera story</a>
+                </div>            
+            </div>
+        </section>
+        <section class="seed">
+            <h5>MY WISH SKIN SEED POT</h5>
+            <hr>
+            <ul>
+                <li>
+                    <div class="seed_banner">
+                       <div class="back">
+                           <img src="images/primera-image_518.jpg" alt="일러스트사진">
+                       </div>
+                       <div class="front">
+                           <a href="#">
+                           <h5>내 피부에 '착'맞는 씨드를 찾아보자.</h5>
+                           <p>감추고 싶은 고민은 쓱~ 밀어주고
+                           <br>바라는 피부는 쏙! 채워주는
+                           <br>나만의 피부 씨앗 찾기
+                           <br>#촉촉#착붙#철벽#토닥토닥</p>
+                           </a>
+                       </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="color-bg"></div>
+        </section>
+        <footer>
+         <div class="footer_in">
+          <div class="sns">
+            <ul>
+                <li><a href="#"><img src="images/facbook.png" alt="페이스북"></a></li>
+                <li><a href="#"><img src="images/youtube.png" alt="유튜브"></a></li>
+                <li><a href="#"><img src="images/instagram.png" alt="인스타그램"></a></li>  
+            </ul>
+          </div>
+          <hr>
+          <div class="f_logo">
+                   <a href="#"><img src="images/amore.png" alt="아모레퍼시픽"></a>
+          </div>
+          <div class="info">
+                <ul>
+                    <li>
+                       <a href="#"><p>회사소개</p></a> 
+                    </li>
+                    <li>
+                       <a href="#"><p>서비스이용약관</p></a> 
+                    </li>
+                    <li>
+                       <a href="#"><p>UGC이용약관</p></a> 
+                    </li>
+                    <li>
+                       <a href="#"><p>개인정보처리방침</p></a> 
+                    </li>
+                    <li>
+                       <a href="#"><p>영상정보처리방침</p></a> 
+                    </li>
+                    <li>
+                       <a href="#"><p>뷰티포인트</p></a> 
+                    </li>
+                    <li>
+                       <a href="#"><p>사이트맵</p></a> 
+                    </li>
+                </ul>
+          </div>
+          <div class="addr">
+                    <p>고객서비스센터(수신자요금부담)080-023-5454(월~금 : AM 09:00 ~ PM 06:00)</p>
+                    <p>ⓒ AMOREPACIFIC CORPORATION. All rights reserved.</p>
+          </div>
+         </div>
+         <hr>
+        </footer>
+    </div>
+</body>
+</html>

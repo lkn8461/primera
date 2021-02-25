@@ -1,0 +1,102 @@
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{display: block;/*인라인요소->블록요소 변경*/ text-decoration: none; color: #333;}
+img{width: 100%;}
+body{background-image:url(../images/background.image.jpg)/*../로 배경을 가져옴*/}
+.wrap{width: 100%;}
+header{width: 100%; height: 100px; float: left; z-index: 100; position: relative; /*z-index는 반드시 position과 함께 기술*/}
+header .header_wrap{width: 1760px; height: 900px; margin: 0 auto;}
+header .top_area{width: 1740px; height: 40px; margin: 0 auto;}
+header .top_area p{font-size: 12px; padding: 10px}
+header .logo{width: 180px;float: left; margin: 0 auto;}
+header nav{float: left; margin-left: 100px; margin-top: 20px;}
+/*주메뉴*/
+header nav > ul > li{float: left;}
+header nav > ul > li > a{padding: 5px 40px; font-size: 15px; font-weight: bold; text-align: center;}
+header nav > ul > li:hover > a{color: green;}
+/*서브메뉴*/
+header nav .sub{border-top: 3px solid #003300; display: none; background-color: #F2F2F2}
+header nav .sub li:first-child{margin-top: 16px;}
+header nav .sub li a{font-size: 12px; padding: 10px; text-align: center;}
+header nav .sub li:last-child{padding-bottom: 16px;}
+header nav .sub li a:hover{color: #006600;}
+header nav > ul > li:hover .sub{display: block;}
+header .right_area{float: right; margin-top: 20px;}
+header .right_area ul li{float: left; font-size: 12px; margin: 0 10px;}
+header .right_area ul li:last-child{width: 20px;}
+/*슬라이드*/
+section.slide{width: 100%; float: left; position: relative;}
+/*슬라이드3개*/
+section.spacial{width: 100%; margin-top: 100px; float: left;}
+section.spacial h5{text-align: center; font-size:18px; color: #a49f78; margin-bottom: 5px;}
+section.spacial p{text-align: center; font-size: 25px; color: #272727; font-weight: bold;}
+section.spacial ul{width: 1280px; margin: 0 auto; margin-top: 80px;}
+section.spacial ul li{width: 400px; margin-right: 40px; float: left;}
+section.spacial ul li .banner{position: relative; width: 400px; height: 630px;}
+section.spacial ul li .banner div{position: absolute;}
+section.spacial ul li .banner .front{display: none;}
+section.spacial ul li:hover .front{display: block;}
+/*마지막 li의 오른쪽 여백 0*/
+section.spacial ul li:last-child{margin-right: 0;}
+section.spacial ul li p{width: 100%; background-color: #b6d3f4; text-align: center; font-size: 18px; line-height: 30px; margin-top: 40px;  padding-top: 10px; padding-bottom: 10px;}
+section.spacial ul li:nth-child(2) p{background-color: #9cc5af;}
+section.spacial ul li:last-child p{background-color: #cacfc7;}
+/*product 슬라이드 4개*/
+section.product{width: 100%; margin-top: 100px; float: left;}
+section.product h5{text-align: center; font-size: 18px; color: #0c584f;}
+section.product hr{width: 100px; height: 5px; margin: 0 auto; background-color: #aaa; margin-top: 18px; margin-bottom: 18px;}
+section.product p{text-align: center; font-size: 20px; color: #272727; font-weight: bold;}
+section.product ul{width: 1280px; margin: 0 auto;/*img 가운데 맞춤*/ margin-top: 80px;}
+section.product ul li{float: left; width: 305px; height: 720px; margin-right: 20px;}
+section.product ul li:nth-child(4n){margin-right: 0;}
+section.product ul li .new1{position: relative; width: 305px; height: 500px;}
+section.product ul li .new1 div{position: absolute; width: 100%;}
+section.product ul li .new1 .front{display: none;}
+section.product ul li h4{text-align: center; font-size: 18px; padding-top: 40px;}
+section.product ul li p{text-align: center; font-size: 12px; padding-top: 50px;}
+section.product ul li h6{text-align: center; font-size: 16px; font-weight: bold; padding-top: 10px;}
+/*li영역에 마우스 오버했을 때 .front 보임*/
+section.product ul li:hover .front{display: block;}
+/*유튜브*/
+section.movie{width: 100%; margin-top: 100px; float: left;}
+section.movie h5{text-align: center; font-size: 18px; color: #0b76f0;}
+section.movie hr{width: 100px; height: 5px; margin: 0 auto; background-color: #aaa; margin-top: 18px; margin-bottom: 18px;}
+section.movie p{text-align: center; font-size: 20px; color: #272727; font-weight: bold;}
+section.movie .movie_in{width: 1280px; margin: 0 auto; margin-top: 80px;}
+section.movie .movie_in iframe{width: 100%;}
+/*뒷 배경 story*/
+section.story{width: 100%; margin-top: 100px; float: left;}
+section.story .fixed_bg{position: absolute; width: 100%; height: 330px; background-image: url(../images/story.image.png); background-attachment: fixed;/*attachment 배경 고정*/ z-index: 1;/*뒤쪽으로 순서 변경*/}
+section.story h5{text-align: center; margin-top: 100px; font-size: 18px; color: #fff; position: relative; z-index: 10;}
+section.story hr{width: 100px; height: 5px; margin: 0 auto; background-color: #aaa; margin-top: 18px; margin-bottom: 58px; z-index: 15; position: relative;}
+section.story .story_in{width: 1280px; margin: 0 auto; margin-top: 80px; position: relative; z-index: 15; }
+section.story .story_in div{width: 50%; height: 400px; position: relative; float: left; box-sizing: border-box;}
+section.story .story_in .right_s {background-color: #a4865b; padding: 60px;}
+section.story .story_in .right_s h4{margin-bottom: 30px; color:#fff; font-size: 25px;}
+section.story .story_in .right_s p{line-height: 28px; font-size: 15px; text-align: justify;/*글자 양쪽 정렬*/ color: #fff;}
+section.story .story_in .right_s a{width: 170px; height: 20px; padding: 10px; border: 3px solid #ccc; text-align: center; margin-top: 18px; padding-bottom: 18px; font-size: 20px;}
+/*seed*/
+section.seed{width: 100%; margin-top: 100px; float: left; height: 650px;}
+section.seed h5{text-align: center; font-size: 18px; color: #fff; z-index: 10; position: relative;}
+section.seed hr{width: 100px; height: 5px; margin: 0 auto; background-color: #aaa; margin-top: 18px; margin-bottom: 18px; z-index: 15; position: relative;}
+section.seed .seed_banner {width: 1280px; height: 400px; position: relative; margin: 0 auto;}
+section.seed .seed_banner div{position: absolute; width: 100%; z-index: 20; margin-top: 60px;}
+section.seed .seed_banner .front{display: none; width: 100%; height: 100%; background-color: rgba(11,118,240,0.4);}
+section.seed .seed_banner h5{text-align: center; font-size: 31px; color: #fff; padding-top: 100px; padding-bottom: 50px;}
+section.seed .seed_banner p{text-align: center; font-size: 20px; color: #0d3767; font-weight: bold;}
+section.seed ul li:hover .front{display: block;}
+/*footer*/
+footer{width: 100%; background-color: #aaa; float: left;}
+.footer_in .sns{width: 100%; float: left;}
+.footer_in .sns ul{width: 200px; margin-top: 80px; margin: 0 auto;}
+.footer_in .sns ul li{width: 30px; margin-top: 50px; float: left; margin-right: 52px; margin-bottom: 50px;}
+.footer_in .sns ul li:last-child{margin-right: 0;}
+hr{width: 100%; height: 1px; background-color: #fff; margin-top: 50px; margin-bottom: 50px;}
+.footer_in .f_logo{width: 305px; height: 30px; margin: 0 auto; margin-bottom: 50px;}
+.footer_in .info{margin: 0 auto; clear:both; width: 925px;}
+.footer_in .info ul li{float: left; font-size: 15px; padding-right: 20px; padding-left: 20px;}
+.footer_in .addr {clear: both; text-align: center;}
+.footer_in .addr p{padding-bottom: 25px;}
+.footer_in .addr p:first-child{padding-top: 25px;}
+.footer_in .addr p:last-child{padding-bottom: 0;}
+
